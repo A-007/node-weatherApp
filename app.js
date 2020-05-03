@@ -56,12 +56,18 @@ app.get("/weather", (req, res) => {
   }
 
   forecast(req.query.address, (response) => {
+    if (response.body.error) {
+      return res.send({
+        error: "Unable to find location",
+      });
+    }
+
     res.send({
       forcast:
         response.body.current.weather_descriptions[0] +
-        " .It is currently " +
+        ". It is currently " +
         response.body.current.temperature +
-        ". But it feels like " +
+        ", But it feels like " +
         response.body.current.feelslike,
       location: response.body.location.name,
       Address: req.query.address,

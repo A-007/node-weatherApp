@@ -6,11 +6,7 @@ const forcast = (address, callback) => {
     address +
     "";
   request({ url: url, json: true }, (error, response) => {
-    if (error) {
-      console.log("Unable to connect app!!");
-    } else {
-      callback(response);
-    }
+    callback(response);
   });
 };
 
