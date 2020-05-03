@@ -1,0 +1,25 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Nodejs Weather App",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-007/node-weatherApp.git"
+  },
+  "author": "Akshay Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-007/node-weatherApp/issues"
+  },
+  "homepage": "https://github.com/A-007/node-weatherApp#readme"
+}
